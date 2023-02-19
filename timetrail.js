@@ -445,7 +445,7 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-       return window.location.assign(`/cs50/end.html?finalScore=${score}`);
+       return window.location.assign(`end.html?finalScore=${score}`);
     }
 
     questionCounter++
@@ -476,7 +476,7 @@ const timer = setInterval(() => {
         clearInterval(timer);
         acceptingAnswers = false;
         localStorage.setItem('mostRecentScore', score);
-        window.location.assign(`/endtime.html?finalScore=${score}`);
+        window.location.assign(`/cs50/endtime.html?finalScore=${score}`);
     }
 }, 1000);
 
