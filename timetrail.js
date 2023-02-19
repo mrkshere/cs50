@@ -8,7 +8,6 @@ const timerElement = document.querySelector("#countdown");
 const questionForm = document.querySelector('#question-form');
 
 
-
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
@@ -468,7 +467,7 @@ getNewQuestion = () => {
   
 };
 
-timeLeft = 5;
+timeLeft = 10;
 countdown.innerText = timeLeft;
 const timer = setInterval(() => {
     timeLeft--;
