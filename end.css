@@ -1,0 +1,114 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+#end {
+    display: flex;
+    flex-direction: column;
+}
+
+#end-text {
+    font-size: 50px;
+
+}
+
+input[type="text"] {
+    padding: 25px 30px;
+    font-size: 24px;
+    width: 100%; 
+  }
+
+
+/* Må endre her sånn at containeren er like stor som knappene*/
+
+
+
+.test
+{
+    color: #64f86b;
+    text-align:center;
+}
+
+.btn
+{
+   position: relative;
+   display: inline-block;
+   padding: 25px 30px;
+   color: #64d86b;
+   text-transform:uppercase;
+   margin: 5px;
+   letter-spacing: 4px;
+   text-decoration: none;
+   font-size: 24px;
+   overflow: hidden;
+   transition: 0.2s; 
+   border: 1px dashed;
+   border-width: 2px;
+   border-style: dashed;
+
+   
+}
+
+.end-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 3px;
+
+
+}
+
+div
+{
+    color: #64d86b;
+   flex-direction: column;
+   text-align: center;
+   font-size: 15px;
+   overflow: hidden;
+}
+.btn:active
+{
+   color: #255784;
+   background: #64d86b;
+   box-shadow: 0 0 10px #64d86b, 0 0 20px #64d86b;
+}
+.btn span
+{
+    position: absolute;
+    display: block;
+}
+.btn span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#64d86b);
+    transition: 1s;
+}
+
+.btn:hover span:nth-child(1)
+{
+    left: 100%;
+}
+
+.btn span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#64d86b);
+    transition: 1s;
+}
+a:hover span:nth-child(3)
+{
+    right: 100%;
+}
