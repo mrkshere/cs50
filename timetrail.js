@@ -467,7 +467,7 @@ getNewQuestion = () => {
   
 };
 
-timeLeft = 30;
+timeLeft = 5;
 countdown.innerText = timeLeft;
 const timer = setInterval(() => {
     timeLeft--;
