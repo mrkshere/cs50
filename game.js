@@ -436,7 +436,7 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score)
 
        // return window.location.assign('/end.html')
-       return window.location.assign(`/end.html?finalScore=${score}`);
+       return window.location.assign(`/cs50/end.html?finalScore=${score}`);
     }
 
     //Kanskje fjerne '' nedover her?
